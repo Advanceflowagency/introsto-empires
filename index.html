@@ -1,0 +1,623 @@
+f<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahaya Strategic Relations</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'The Seasons';
+      src: local('Georgia'), local('Times New Roman');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    body {
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .font-seasons {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .font-libre {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #C6A667;
+    }
+
+    .btn-primary {
+      transition: all 0.2s ease;
+      border-radius: 8px;
+    }
+
+    .btn-primary:hover {
+      background-color: #B89557;
+      transform: translateY(-1px);
+    }
+
+    .section-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0A1A2F;
+      z-index: 50;
+      transition: transform 0.3s ease;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navbar.hidden {
+      transform: translateY(-100%);
+    }
+
+    .process-number {
+      width: 48px;
+      height: 48px;
+      border: 2px solid #C6A667;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-rounded {
+      border-radius: 12px;
+    }
+
+    .section-divider {
+      height: 1px;
+      background-color: #C6A667;
+      width: 100%;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: #0A1A2F;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .burger span {
+      width: 24px;
+      height: 2px;
+      background-color: #C6A667;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-nav {
+        display: none !important;
+      }
+      .burger {
+        display: flex;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full w-full overflow-auto font-libre" style="background-color: #0A1A2F; color: #FFFFFF; margin: 0; padding: 0;"><!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="section-content px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#hero">
+        <img src="assets/navlogo.png" alt="Mahaya Strategic Partnership Logo" 
+             style="height: 80px; width: auto;">
+      </a>
+    </div>
+
+    <!-- Desktop navigation -->
+    <div class="desktop-nav flex gap-8 items-center">
+      <a href="#what-we-do" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">What We Do</a>
+      <a href="#our-process" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">Our Process</a>
+      <a href="#who-we-work-with" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">Who We Work With</a>
+<a href="https://forms.zohopublic.com/hayacws1/form/WeblinkStrategicAlignmentIntakeForm/formperma/gHe9PYcAXNeyUXF7gWaFW73aH6pm4a5PRoZGJ3B0zSo"
+   id="hero-cta"
+   class="btn-primary inline-block px-5 py-2 text-base font-medium mb-4"
+   style="background-color: #C6A667; color: #0A1A2F; border-radius: 10px;"
+   onclick="zforms_open_window(this.href, 648, 700); return false;">
+   Begin Strategic Alignment
+</a>
+    </div>
+
+    <!-- Mobile burger menu -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+</div><!-- Hero Section -->
+<section class="w-full py-24 px-6" 
+         style="padding-top: 120px;
+                background-image: url('assets/image1.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;">
+  <div class="section-content text-center">
+
+    <h1 id="hero-h1" class="font-seasons text-6xl mb-8" style="color: #C6A667; line-height: 1.1;">
+      Mahaya Strategic Relations
+    </h1>
+
+    <h2 id="hero-h2" class="font-seasons text-3xl mb-2" style="line-height: 1.3;">
+      Strategic Advisory for Partnership, Capital, and Growth-Stage Alignment
+    </h2>
+
+    <p id="hero-body" class="text-lg mb-12 max-w-3xl mx-auto" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+      Operating at the intersection of technology, wellness, and culture. A strategic relations and alignment advisory firm supporting founders and organizations entering their next phase of scale. Structure precedes scale. MSR operates before complexity becomes risk.
+    </p>
+
+    <p class="text-sm tracking-wider mb-6 text-center" style="color: #C6A667; letter-spacing: 0.05em;">
+      TECH · WELLNESS · CULTURE
+    </p>
+
+    <a href="https://forms.zohopublic.com/hayacws1/form/WeblinkStrategicAlignmentIntakeForm/formperma/gHe9PYcAXNeyUXF7gWaFW73aH6pm4a5PRoZGJ3B0zSo"
+      id="hero-cta"
+      class="btn-primary inline-block px-8 py-4 text-base font-medium mb-4"
+      style="background-color: #C6A667; color: #0A1A2F; border-radius: 24px;"
+      onclick="zforms_open_window(this.href, 648, 700); return false;">
+      Begin Strategic Alignment →
+    </a>
+
+  </div>
+</section><!-- Divider -->
+  <div class="section-divider"></div><!-- What We Do Section -->
+  <section id="what-we-do" class="w-full py-16 px-6">
+   <div class="section-content">
+    <h2 id="what-title" class="font-seasons text-4xl mb-6" style="color: #C6A667;">What We Do</h2>
+    <p id="what-lead" class="text-xl mb-16" style="color: rgba(255,255,255,0.75); line-height: 1.7;">We advise organizations at the point where scale introduces complexity,
+exposure, and risk. Growth amplifies everything—strategy, relationships, visibility, and pressure.
+MSR operates upstream of execution, where decisions must be sound before momentum
+accelerates.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div class="card-rounded p-8 border"
+     style="border-color: #C6A667; background-color: rgba(198, 166, 103, 0.05);">
+      <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Strategic Partnership Architecture</h3>
+      <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Governing partnership strategy to align objectives, positioning, and long-term value.</p>
+     </div>
+     <div class="card-rounded p-8 border"
+     style="border-color: #C6A667; background-color: rgba(198, 166, 103, 0.05);">
+      <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Investor &amp; Capital Alignment</h3>
+      <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Structuring positioning and relationships ahead of capital conversations.</p>
+     </div>
+     <div class="card-rounded p-8 border"
+     style="border-color: #C6A667; background-color: rgba(198, 166, 103, 0.05);">
+      <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Ecosystem &amp; Brand Positioning</h3>
+      <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Defining an organization's role within its broader ecosystem.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Divider -->
+  <div class="section-divider"></div><!-- Our Process Section -->
+  <section id="our-process" class="w-full py-16 px-6">
+   <div class="section-content">
+    <h2 id="process-title" class="font-seasons text-4xl mb-6" style="color: #C6A667;">Our Process</h2>
+    <p id="process-lead" class="text-xl mb-16" style="color: rgba(255,255,255,0.75); line-height: 1.7;">We bring structure to complexity—guiding organizations from strategic ambiguity to clear, aligned decision-making before execution.</p>
+    <div class="space-y-8 max-w-3xl">
+     <div class="flex gap-6">
+      <div class="process-number font-seasons text-xl" style="color: #C6A667; border-color: #C6A667;">
+       1
+      </div>
+      <div>
+       <h3 class="font-seasons text-xl mb-2" style="color: #FFFFFF;">Strategic Alignment</h3>
+       <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Assess objectives, constraints, and context.</p>
+      </div>
+     </div>
+     <div class="flex gap-6">
+      <div class="process-number font-seasons text-xl" style="color: #C6A667; border-color: #C6A667;">
+       2
+      </div>
+      <div>
+       <h3 class="font-seasons text-xl mb-2" style="color: #FFFFFF;">Clarity &amp; Positioning</h3>
+       <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Refine strategic direction, narrative coherence, and internal decision logic.</p>
+      </div>
+     </div>
+     <div class="flex gap-6">
+      <div class="process-number font-seasons text-xl" style="color: #C6A667; border-color: #C6A667;">
+       3
+      </div>
+      <div>
+       <h3 class="font-seasons text-xl mb-2" style="color: #FFFFFF;">Partnership &amp; Investment Readiness</h3>
+       <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Prepare organizations to engage partners and capital from a position of strength,
+credibility, and control.</p>
+      </div>
+     </div>
+     <div class="flex gap-6">
+      <div class="process-number font-seasons text-xl" style="color: #C6A667; border-color: #C6A667;">
+       4
+      </div>
+      <div>
+       <h3 class="font-seasons text-xl mb-2" style="color: #FFFFFF;">Strategic Introductions</h3>
+       <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Facilitate targeted introductions once alignment, readiness, and fit are established.</p>
+      </div>
+     </div>
+    </div>
+    <p class="text-base mt-12" style="color: rgba(255,255,255,0.75); line-height: 1.7;">Every engagement is selective, deliberate, and grounded in strategic fit.</p>
+   </div>
+</section><!-- Divider -->
+<div class="section-divider"></div>
+
+<section id="who-we-work-with" class="w-full py-16 px-6">
+  <div class="section-content max-w-4xl mx-auto">
+
+    <h2 id="who-title" class="font-seasons text-4xl mb-6" style="color: #C6A667;">
+      Who We Are
+    </h2>
+
+    <div class="space-y-6 text-lg" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+
+      <p>
+        Mahaya Strategic Relations (MSR) is a strategic relations and alignment advisory firm operating at the intersection of partnership, capital, and growth-stage execution.
+      </p>
+
+      <p>
+        We work with founders and organizations at moments of transition—where increased scale introduces complexity, visibility, and risk.
+      </p>
+
+      <p>
+        MSR operates as a governance and alignment layer before execution. Our role is to ensure that structure, positioning, and strategic relationships are sound before capital is deployed, partnerships are activated, or growth is accelerated.
+      </p>
+
+      <p>
+        We do not replace internal teams. We support decision clarity at the point where misalignment becomes costly.
+      </p>
+
+      <p>
+        <strong style="color:#C6A667;">Execution follows alignment—not the other way around.</strong>
+      </p>
+
+    </div>
+
+  </div>
+</section><!-- Divider -->
+  <div class="section-divider"></div><!-- Who We Work With Section -->
+  <section id="who-we-work-with" class="w-full py-16 px-6">
+  <div class="section-content">
+    <h2 id="who-title" class="font-seasons text-4xl mb-6" style="color: #C6A667;">Who We Work With</h2>
+    <p id="who-lead" class="text-xl mb-16" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+      We work with organizations and leaders navigating growth, complexity, and transition — where clarity, alignment, and strategic relationships matter most.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+      <!-- Card 1 -->
+      <div class="card-rounded p-8 border border-white border-opacity-10" style="background-color: rgba(198, 166, 103, 0.05);">
+        <img src="assets/image3.png" alt="Founders & Leadership Teams Image" 
+             style="width: 100%; max-width: 320px; height: auto; margin: 0 auto 16px; display: block;">
+        <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Founders &amp; Leadership Teams</h3>
+        <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+          Preparing for partnerships, capital conversations, or repositioning for scale.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-rounded p-8 border border-white border-opacity-10" style="background-color: rgba(198, 166, 103, 0.05);">
+        <img src="assets/image4.png" alt="Brands & Organizations Image" 
+             style="width: 100%; max-width: 320px; height: auto; margin: 0 auto 16px; display: block;">
+        <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Brands &amp; Organizations</h3>
+        <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+          Aligning strategy, partnerships, and positioning during expansion or collaboration.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-rounded p-8 border border-white border-opacity-10" style="background-color: rgba(198, 166, 103, 0.05);">
+        <img src="assets/image5.png" alt="Investors, Platforms & Mission-Driven Organizations Image" 
+             style="width: 100%; max-width: 320px; height: auto; margin: 0 auto 16px; display: block;">
+        <h3 class="font-seasons text-2xl mb-4" style="color: #FFFFFF;">Investors, Platforms &amp; Mission-Driven Organizations</h3>
+        <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+          Engaging aligned founders and initiatives through a structured, strategic approach.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="text-base" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+      Our work is best suited for those seeking strategic alignment — not transactional introductions.
+    </p>
+  </div>
+</section>
+
+  <div class="section-divider"></div>
+
+<section id="our-ecosystems" class="w-full py-16 px-6">
+  <div class="section-content max-w-4xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="font-seasons text-4xl mb-8" style="color: #C6A667; line-height: 1.2;">
+      Our Ecosystems
+    </h2>
+    <!-- Triangular Image -->
+    <img src="assets/image2.png" alt="Technology · Wellness · Culture Triangular Diagram"
+         style="width: 100%; max-width: 400px; margin: 0 auto 24px; display: block;">
+    <!-- Section Copy -->
+    <div class="space-y-6 text-lg" style="color: rgba(255,255,255,0.75); line-height: 1.7;">
+      <p>
+        These are not service categories. They are complex, high-stakes ecosystems where strategic alignment, credibility, and long-term value creation are essential.
+      </p>
+      <p>
+        MSR operates across these domains where organizations face increased visibility, capital exposure, and partnership complexity.
+      </p>
+      <p>
+        Our work is best suited for founders and organizations entering their next phase of growth—where governance, discretion, and execution discipline are required.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Divider -->
+  <div class="section-divider"></div><!-- Final CTA Section -->
+  <section id="strategic-alignment" class="w-full py-16 px-6">
+   <div class="section-content">
+    <h2 id="cta-title" class="font-seasons text-4xl mb-6" style="color: #C6A667;">Begin Strategic Alignment</h2>
+    <p id="cta-lead" class="text-xl mb-12" style="color: rgba(255,255,255,0.75); line-height: 1.7;">If your organization is entering a phase where growth must be done
+deliberately—through partnerships, capital, or expansion—the first step is establishing the right
+structure.</p>
+<a href="https://forms.zohopublic.com/hayacws1/form/WeblinkStrategicAlignmentIntakeForm/formperma/gHe9PYcAXNeyUXF7gWaFW73aH6pm4a5PRoZGJ3B0zSo"
+   id="hero-cta"
+   class="btn-primary inline-block px-8 py-4 text-base font-medium mb-4"
+   style="background-color: #C6A667; color: #0A1A2F; border-radius: 24px;"
+   onclick="zforms_open_window(this.href, 648, 700); return false;">
+   Begin Strategic Alignment →
+</a>
+    <p id="cta-disclaimer" class="text-sm" style="color: rgba(255,255,255,0.5);">Requests are reviewed by our team. Follow-up is provided within 2–3 business days.</p>
+   </div>
+  </section><!-- Footer -->
+  <footer class="w-full py-12 px-6 border-t border-white border-opacity-10">
+   <div class="section-content">
+    <div class="flex justify-between items-start mb-8">
+     <div class="max-w-md">
+      <h3 class="font-seasons text-xl mb-4" style="color: #C6A667;">Newsletter</h3>
+      <p class="text-sm mb-4" style="color: rgba(255,255,255,0.75);">Strategic insights on partnerships, capital, and positioning.</p>
+      <div class="flex gap-2"><input type="email" placeholder="Email address" class="px-4 py-2 text-sm flex-1" style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #FFFFFF; border-radius: 2px;"> <button class="btn-primary px-6 py-2 text-sm font-medium" style="background-color: #C6A667; color: #0A1A2F; border-radius: 2px;">Subscribe</button>
+      </div>
+     </div>
+     <div><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-block" style="color: rgba(255,255,255,0.75);">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+       </svg></a>
+     </div>
+    </div>
+    <div class="flex gap-6 text-sm" style="color: rgba(255,255,255,0.5);"><a href="#" class="nav-link">Privacy</a> <a href="#" class="nav-link">Terms</a>
+    </div>
+   </div>
+  </footer>
+  <script>
+  const defaultConfig = {
+    background_color: "#0A1A2F",
+    accent_color: "#C6A667",
+    text_color: "#FFFFFF",
+    secondary_text_color: "rgba(255,255,255,0.75)",
+    font_family: "Georgia",
+    font_size: 16,
+    hero_h1: "Mahaya Strategic Relations",
+    hero_h2: "Strategic Advisory for Partnership, Capital, and Growth-Stage Alignment",
+    hero_subtitle: "At the intersection of Tech × Wellness × Culture.",
+    hero_body: "Operating at the intersection of technology, wellness, and culture. A strategic relations and alignment advisory firm supporting founders and organizations entering their next phase of scale.",
+    hero_cta: "Begin Strategic Alignment →",
+    hero_disclaimer: "By request only. Limited engagements per quarter.",
+    what_title: "What We Do",
+    what_lead: "We advise growth-stage organizations on alignment decisions that precede scale.",
+    process_title: "Our Process",
+    process_lead: "We bring structure to complexity — guiding organizations from strategic ambiguity to clear, aligned action.",
+    who_title: "Who We Work With",
+    who_lead: "We work with organizations and leaders navigating growth, complexity, and transition — where clarity, alignment, and strategic relationships matter most.",
+    cta_title: "Begin Strategic Alignment",
+    cta_lead: "If you are preparing for partnerships, capital conversations, or your next phase of growth, the first step is strategic alignment.",
+    cta_button: "Begin Strategic Alignment →",
+    cta_disclaimer: "Requests are reviewed by our team. Follow-up is provided within 2–3 business days."
+  };
+
+  async function onConfigChange(config) {
+    const bgColor = config.background_color || defaultConfig.background_color;
+    const accentColor = config.accent_color || defaultConfig.accent_color;
+    const textColor = config.text_color || defaultConfig.text_color;
+    const secondaryTextColor = config.secondary_text_color || defaultConfig.secondary_text_color;
+    const customFont = config.font_family || defaultConfig.font_family;
+    const baseSize = config.font_size || defaultConfig.font_size;
+
+    document.body.style.backgroundColor = bgColor;
+    document.body.style.color = textColor;
+    
+    const baseFontStack = "'Georgia', 'Times New Roman', serif";
+    document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+    document.body.style.fontSize = `${baseSize}px`;
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.style.color = secondaryTextColor;
+    });
+
+    const allAccentElements = document.querySelectorAll('.font-seasons, h1, h2, h3');
+    allAccentElements.forEach(el => {
+      if (el.id === 'hero-h1' || el.id === 'what-title' || el.id === 'process-title' || el.id === 'who-title' || el.id === 'cta-title') {
+        el.style.color = accentColor;
+      }
+    });
+
+    const buttons = document.querySelectorAll('.btn-primary');
+    buttons.forEach(btn => {
+      btn.style.backgroundColor = accentColor;
+      btn.style.color = bgColor;
+    });
+
+    document.getElementById('hero-h1').textContent = config.hero_h1 || defaultConfig.hero_h1;
+    document.getElementById('hero-h2').textContent = config.hero_h2 || defaultConfig.hero_h2;
+    document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+    document.getElementById('hero-body').textContent = config.hero_body || defaultConfig.hero_body;
+    document.getElementById('hero-cta').textContent = config.hero_cta || defaultConfig.hero_cta;
+    document.getElementById('hero-disclaimer').textContent = config.hero_disclaimer || defaultConfig.hero_disclaimer;
+    document.getElementById('what-title').textContent = config.what_title || defaultConfig.what_title;
+    document.getElementById('what-lead').textContent = config.what_lead || defaultConfig.what_lead;
+    document.getElementById('process-title').textContent = config.process_title || defaultConfig.process_title;
+    document.getElementById('process-lead').textContent = config.process_lead || defaultConfig.process_lead;
+    document.getElementById('who-title').textContent = config.who_title || defaultConfig.who_title;
+    document.getElementById('who-lead').textContent = config.who_lead || defaultConfig.who_lead;
+    document.getElementById('cta-title').textContent = config.cta_title || defaultConfig.cta_title;
+    document.getElementById('cta-lead').textContent = config.cta_lead || defaultConfig.cta_lead;
+    document.getElementById('cta-button').textContent = config.cta_button || defaultConfig.cta_button;
+    document.getElementById('cta-disclaimer').textContent = config.cta_disclaimer || defaultConfig.cta_disclaimer;
+  }
+
+  function mapToCapabilities(config) {
+    return {
+      recolorables: [
+        {
+          get: () => config.background_color || defaultConfig.background_color,
+          set: (value) => {
+            config.background_color = value;
+            window.elementSdk.setConfig({ background_color: value });
+          }
+        },
+        {
+          get: () => config.accent_color || defaultConfig.accent_color,
+          set: (value) => {
+            config.accent_color = value;
+            window.elementSdk.setConfig({ accent_color: value });
+          }
+        },
+        {
+          get: () => config.text_color || defaultConfig.text_color,
+          set: (value) => {
+            config.text_color = value;
+            window.elementSdk.setConfig({ text_color: value });
+          }
+        },
+        {
+          get: () => config.secondary_text_color || defaultConfig.secondary_text_color,
+          set: (value) => {
+            config.secondary_text_color = value;
+            window.elementSdk.setConfig({ secondary_text_color: value });
+          }
+        }
+      ],
+      borderables: [],
+      fontEditable: {
+        get: () => config.font_family || defaultConfig.font_family,
+        set: (value) => {
+          config.font_family = value;
+          window.elementSdk.setConfig({ font_family: value });
+        }
+      },
+      fontSizeable: {
+        get: () => config.font_size || defaultConfig.font_size,
+        set: (value) => {
+          config.font_size = value;
+          window.elementSdk.setConfig({ font_size: value });
+        }
+      }
+    };
+  }
+
+  function mapToEditPanelValues(config) {
+    return new Map([
+      ["hero_h1", config.hero_h1 || defaultConfig.hero_h1],
+      ["hero_h2", config.hero_h2 || defaultConfig.hero_h2],
+      ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+      ["hero_body", config.hero_body || defaultConfig.hero_body],
+      ["hero_cta", config.hero_cta || defaultConfig.hero_cta],
+      ["hero_disclaimer", config.hero_disclaimer || defaultConfig.hero_disclaimer],
+      ["what_title", config.what_title || defaultConfig.what_title],
+      ["what_lead", config.what_lead || defaultConfig.what_lead],
+      ["process_title", config.process_title || defaultConfig.process_title],
+      ["process_lead", config.process_lead || defaultConfig.process_lead],
+      ["who_title", config.who_title || defaultConfig.who_title],
+      ["who_lead", config.who_lead || defaultConfig.who_lead],
+      ["cta_title", config.cta_title || defaultConfig.cta_title],
+      ["cta_lead", config.cta_lead || defaultConfig.cta_lead],
+      ["cta_button", config.cta_button || defaultConfig.cta_button],
+      ["cta_disclaimer", config.cta_disclaimer || defaultConfig.cta_disclaimer]
+    ]);
+  }
+
+  if (window.elementSdk) {
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange,
+      mapToCapabilities,
+      mapToEditPanelValues
+    });
+  }
+
+  // Mobile menu toggle
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking on a link
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  });
+</script>
+<script type="text/javascript">
+function zforms_open_window(url, height, width) {
+  var leftPos = 0;
+  var topPos = 0;
+  if(screen) {
+    leftPos = (screen.width - width) / 2;
+    topPos = (screen.height - height) / 2;
+    window.open(
+      url,
+      null,
+      'width=' + width + ',height=' + height + ',left=' + leftPos + ',top=' + topPos + 
+      ',toolbar=0,location=0,status=1,scrollbars=1,resizable=1'
+    );
+  }
+}
+</script>
+
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ae1e5a067cb804a',t:'MTc2NTc1OTMwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
