@@ -99,6 +99,22 @@ f<!doctype html>
       width: 100%;
     }
 
+    #hero-section {
+      background-image: url('assets/image1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+      #hero-section {
+        background-size: cover;      /* ✅ keep cover */
+        background-position: center; /* ✅ fill properly */
+        min-height: 100svh;
+      }
+    }
+
     .mobile-menu {
       display: none;
       position: fixed;
@@ -168,7 +184,9 @@ f<!doctype html>
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full w-full overflow-auto font-libre" style="background-color: #0A1A2F; color: #FFFFFF; margin: 0; padding: 0;"><!-- Navigation -->
+<body class="w-full font-libre" style="background-color:#0A1A2F; color:#FFFFFF; margin:0;">
+  
+  <!-- Navigation -->
 <nav class="navbar" id="navbar">
   <div class="section-content px-6 py-4 flex justify-between items-center">
     
@@ -557,20 +575,19 @@ structure.</p>
 </footer>
 
 <script>
-  const section = document.getElementById('hero-section');
+const section = document.getElementById('hero-section');
 
+if (window.innerWidth > 768) {
   window.addEventListener('scroll', () => {
-    // Calculate scroll progress
     const scrollTop = window.scrollY;
     const sectionHeight = section.offsetHeight;
 
-    // Limit the scale factor
-    let scale = 1 + scrollTop / (sectionHeight * 2); // adjust 2 for speed of zoom
-    if(scale > 1.2) scale = 1.2; // max zoom 160%
+    let scale = 1 + scrollTop / (sectionHeight * 2);
+    if (scale > 1.2) scale = 1.2;
 
-    // Apply the transform
     section.style.backgroundSize = `${scale * 100}%`;
   });
+}
 </script>
 
 <script>
@@ -752,17 +769,17 @@ structure.</p>
 </script>
 
 <script>
-  let lastScrollY = 0;
+  let lastScrollY = window.scrollY;
   const navbar = document.getElementById('navbar');
   const scrollThreshold = 10;
 
-  document.body.addEventListener('scroll', () => {
-    const currentScrollY = document.body.scrollTop;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
 
     if (Math.abs(currentScrollY - lastScrollY) < scrollThreshold) return;
 
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      navbar.classList.add('hidden');   // scrolling down
+      navbar.classList.add('hidden'); // scrolling down
     } else {
       navbar.classList.remove('hidden'); // scrolling up
     }
