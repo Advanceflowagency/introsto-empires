@@ -1,0 +1,507 @@
+f<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahaya Strategic Relations</title>
+
+  <script src="/_sdk/element_sdk.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @font-face {
+      font-family: 'The Seasons';
+      src: local('Georgia'), local('Times New Roman');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    body, * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .font-seasons,
+    .font-libre {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-link {
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #C6A667;
+    }
+
+    .btn-primary {
+      transition: all 0.2s ease;
+      border-radius: 8px;
+    }
+
+    .btn-primary:hover {
+      background-color: #B89557;
+      transform: translateY(-1px);
+    }
+
+    .section-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0A1A2F;
+      z-index: 50;
+      transition: transform 0.3s ease;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navbar.hidden {
+      transform: translateY(-100%);
+    }
+
+    .card-rounded {
+      border-radius: 12px;
+    }
+
+    .section-divider {
+      height: 1px;
+      background-color: #C6A667;
+      width: 100%;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: #0A1A2F;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .burger span {
+      width: 24px;
+      height: 2px;
+      background-color: #C6A667;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-nav {
+        display: none !important;
+      }
+      .burger {
+        display: flex;
+      }
+    }
+
+    /* =========================
+       LEGAL / PRIVACY PAGES
+       ========================= */
+
+    .legal-page {
+      max-width: 900px;
+      margin: 140px auto 80px;
+      padding: 0 20px;
+      color: ##C6A667;
+    }
+
+    .legal-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #C6A667; 
+    }
+
+    .legal-header h2 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 48px;
+    }
+
+    .legal-section {
+      margin-bottom: 36px;
+    }
+
+    .legal-section h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: ##C6A667;
+    }
+
+    .legal-section p {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .legal-section a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+
+  <style>@view-transition { navigation: auto; }</style>
+
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+</head>
+ <body class="h-full w-full overflow-auto font-libre" style="background-color: #0A1A2F; color: #FFFFFF; margin: 0; padding: 0;"><!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="section-content px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#hero">
+        <img src="assets/navlogo.png" alt="Mahaya Strategic Partnership Logo" 
+             style="height: 80px; width: auto;">
+      </a>
+    </div>
+
+    <!-- Desktop navigation -->
+    <div class="desktop-nav flex gap-8 items-center">
+      <a href="#what-we-do" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">What We Do</a>
+      <a href="#our-process" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">Our Process</a>
+      <a href="#who-we-work-with" class="nav-link text-sm" style="color: rgba(255,255,255,0.75);">Who We Work With</a>
+<a href="https://forms.zohopublic.com/hayacws1/form/RequestaStrategicConversation/formperma/rgIuj3xoGxOniun_qIXT_zbEOXZeeHZl7m58FtHXcsE"
+   id="hero-cta"
+   class="btn-primary inline-block px-5 py-2 text-base font-medium mb-4"
+   style="background-color: #C6A667; color: #0A1A2F; border-radius: 10px;"
+   onclick="zforms_open_window(this.href, 648, 700); return false;">
+   Begin Strategic Alignment
+</a>  
+    </div>
+
+    <!-- Mobile burger menu -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+ 
+<main class="legal-page">
+  <section class="legal-header">
+    <h1>Terms of Use</h1>
+    <p>
+      By accessing or using this website, you agree to these Terms of Use.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Legal Entity Disclosure</h3>
+    <p>
+      Mahaya Strategic Relations (“MSR”) is a strategic advisory brand.
+    </p>
+    <p>
+      At present, advisory services are contracted and invoiced through
+      <strong>9415-9761 Québec Inc.</strong> (Canada).
+    </p>
+    <p>
+      MSR may also operate through <strong>Plug And Earn Technologies LLC</strong> (United States)
+      depending on jurisdiction and engagement structure.
+    </p>
+    <p>
+      References to “MSR,” “we,” or “our” refer to the operating advisory brand and its associated
+      legal entities.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Advisory Nature</h3>
+    <p>
+      MSR provides strategic advisory services only. Content on this website does not constitute
+      legal, financial, investment, or tax advice.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Selective Engagement</h3>
+    <p>
+      Submission of an inquiry or intake form does not guarantee engagement. All engagements are
+      subject to review, acceptance, and formal agreement.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Limitation of Liability</h3>
+    <p>
+      MSR is not responsible for decisions, actions, or outcomes resulting from reliance on
+      information provided on this website.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Intellectual Property</h3>
+    <p>
+      All content on this website, including text, graphics, and visual assets, is the intellectual
+      property of Mahaya Strategic Relations and may not be reproduced or distributed without
+      prior written permission.
+    </p>
+  </section>
+
+  <section class="legal-section">
+    <h3>Governing Law</h3>
+    <p>
+      These Terms of Use are governed by the laws applicable in the Province of Québec, Canada,
+      and the United States, as applicable to the engagement.
+    </p>
+  </section>
+</main>
+
+
+  </section><!-- Footer -->
+  <footer class="w-full py-12 px-6 border-t border-white border-opacity-10">
+   <div class="section-content">
+    <div class="flex justify-between items-start mb-8">
+     <div class="max-w-md">
+      <h3 class="font-seasons text-xl mb-4" style="color: #C6A667;">Newsletter</h3>
+      <p class="text-sm mb-4" style="color: rgba(255,255,255,0.75);">Strategic insights on partnerships, capital, and positioning.</p>
+   <div class="flex gap-2">
+  <input 
+    type="email" 
+    placeholder="Email address" 
+    class="px-4 py-2 text-sm flex-1" 
+    style="background-color: rgba(255,255,255,0.05); 
+    border: 1px solid rgba(255,255,255,0.1); 
+    color: #FFFFFF; border-radius: 2px;"> 
+      <a 
+        href="https://forms.zohopublic.com/hayacws1/form/ContactMSR/formperma/jdMN_NK8zle2irFoxvfWTXB7gl3_YRU86ae--cdlbpM"
+        onclick="zforms_open_window(this.href, 648, 700); return false"
+        class="btn-primary px-6 py-2 text-sm font-medium"
+        style="background-color: #C6A667; color: #0A1A2F; border-radius: 2px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+        Subscribe
+      </a>
+</div>
+      </div>
+     </div>
+     <div><a href="https://www.linkedin.com/in/boicelmahaya" target="_blank" rel="noopener noreferrer" class="inline-block" style="color: rgba(255,255,255,0.75);">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+       </svg></a>
+     </div>
+    </div>
+    <div class="flex gap-6 text-sm" style="color: rgba(255,255,255,0.5);"><a href="#" class="nav-link">Privacy</a> <a href="#" class="nav-link">Terms</a>
+    </div>
+   </div>
+  </footer>
+  <script>
+  const defaultConfig = {
+    background_color: "#0A1A2F",
+    accent_color: "#C6A667",
+    text_color: "#FFFFFF",
+    secondary_text_color: "rgba(255,255,255,0.75)",
+    font_family: "Georgia",
+    font_size: 16,
+    hero_h1: "Mahaya Strategic Relations",
+    hero_h2: "Strategic Advisory for Partnerships, Capital, and Growth-Stage Alignment",
+    hero_subtitle: "At the intersection of Tech × Wellness × Culture.",
+    hero_body: "Operating at the intersection of technology, wellness, and culture. A strategic relations and alignment advisory firm supporting founders and organizations entering their next phase of scale.",
+    hero_cta: "Begin Strategic Alignment →",
+    hero_disclaimer: "By request only. Limited engagements per quarter.",
+    what_title: "What We Do",
+    what_lead: "We advise growth-stage organizations on alignment decisions that precede scale.",
+    process_title: "Our Process",
+    process_lead: "We bring structure to complexity — guiding organizations from strategic ambiguity to clear, aligned action.",
+    who_title: "Who We Work With",
+    who_lead: "We work with organizations and leaders navigating growth, complexity, and transition — where clarity, alignment, and strategic relationships matter most.",
+    cta_title: "Begin Strategic Alignment",
+    cta_lead: "If you are preparing for partnerships, capital conversations, or your next phase of growth, the first step is strategic alignment.",
+    cta_button: "Begin Strategic Alignment →",
+    cta_disclaimer: "Requests are reviewed by our team. Follow-up is provided within 2–3 business days."
+  };
+
+  async function onConfigChange(config) {
+    const bgColor = config.background_color || defaultConfig.background_color;
+    const accentColor = config.accent_color || defaultConfig.accent_color;
+    const textColor = config.text_color || defaultConfig.text_color;
+    const secondaryTextColor = config.secondary_text_color || defaultConfig.secondary_text_color;
+    const customFont = config.font_family || defaultConfig.font_family;
+    const baseSize = config.font_size || defaultConfig.font_size;
+
+    document.body.style.backgroundColor = bgColor;
+    document.body.style.color = textColor;
+    
+    const baseFontStack = "'Georgia', 'Times New Roman', serif";
+    document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+    document.body.style.fontSize = `${baseSize}px`;
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.style.color = secondaryTextColor;
+    });
+
+    const allAccentElements = document.querySelectorAll('.font-seasons, h1, h2, h3');
+    allAccentElements.forEach(el => {
+      if (el.id === 'hero-h1' || el.id === 'what-title' || el.id === 'process-title' || el.id === 'who-title' || el.id === 'cta-title') {
+        el.style.color = accentColor;
+      }
+    });
+
+    const buttons = document.querySelectorAll('.btn-primary');
+    buttons.forEach(btn => {
+      btn.style.backgroundColor = accentColor;
+      btn.style.color = bgColor;
+    });
+
+    document.getElementById('hero-h1').textContent = config.hero_h1 || defaultConfig.hero_h1;
+    document.getElementById('hero-h2').textContent = config.hero_h2 || defaultConfig.hero_h2;
+    document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+    document.getElementById('hero-body').textContent = config.hero_body || defaultConfig.hero_body;
+    document.getElementById('hero-cta').textContent = config.hero_cta || defaultConfig.hero_cta;
+    document.getElementById('hero-disclaimer').textContent = config.hero_disclaimer || defaultConfig.hero_disclaimer;
+    document.getElementById('what-title').textContent = config.what_title || defaultConfig.what_title;
+    document.getElementById('what-lead').textContent = config.what_lead || defaultConfig.what_lead;
+    document.getElementById('process-title').textContent = config.process_title || defaultConfig.process_title;
+    document.getElementById('process-lead').textContent = config.process_lead || defaultConfig.process_lead;
+    document.getElementById('who-title').textContent = config.who_title || defaultConfig.who_title;
+    document.getElementById('who-lead').textContent = config.who_lead || defaultConfig.who_lead;
+    document.getElementById('cta-title').textContent = config.cta_title || defaultConfig.cta_title;
+    document.getElementById('cta-lead').textContent = config.cta_lead || defaultConfig.cta_lead;
+    document.getElementById('cta-button').textContent = config.cta_button || defaultConfig.cta_button;
+    document.getElementById('cta-disclaimer').textContent = config.cta_disclaimer || defaultConfig.cta_disclaimer;
+  }
+
+  function mapToCapabilities(config) {
+    return {
+      recolorables: [
+        {
+          get: () => config.background_color || defaultConfig.background_color,
+          set: (value) => {
+            config.background_color = value;
+            window.elementSdk.setConfig({ background_color: value });
+          }
+        },
+        {
+          get: () => config.accent_color || defaultConfig.accent_color,
+          set: (value) => {
+            config.accent_color = value;
+            window.elementSdk.setConfig({ accent_color: value });
+          }
+        },
+        {
+          get: () => config.text_color || defaultConfig.text_color,
+          set: (value) => {
+            config.text_color = value;
+            window.elementSdk.setConfig({ text_color: value });
+          }
+        },
+        {
+          get: () => config.secondary_text_color || defaultConfig.secondary_text_color,
+          set: (value) => {
+            config.secondary_text_color = value;
+            window.elementSdk.setConfig({ secondary_text_color: value });
+          }
+        }
+      ],
+      borderables: [],
+      fontEditable: {
+        get: () => config.font_family || defaultConfig.font_family,
+        set: (value) => {
+          config.font_family = value;
+          window.elementSdk.setConfig({ font_family: value });
+        }
+      },
+      fontSizeable: {
+        get: () => config.font_size || defaultConfig.font_size,
+        set: (value) => {
+          config.font_size = value;
+          window.elementSdk.setConfig({ font_size: value });
+        }
+      }
+    };
+  }
+
+  function mapToEditPanelValues(config) {
+    return new Map([
+      ["hero_h1", config.hero_h1 || defaultConfig.hero_h1],
+      ["hero_h2", config.hero_h2 || defaultConfig.hero_h2],
+      ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+      ["hero_body", config.hero_body || defaultConfig.hero_body],
+      ["hero_cta", config.hero_cta || defaultConfig.hero_cta],
+      ["hero_disclaimer", config.hero_disclaimer || defaultConfig.hero_disclaimer],
+      ["what_title", config.what_title || defaultConfig.what_title],
+      ["what_lead", config.what_lead || defaultConfig.what_lead],
+      ["process_title", config.process_title || defaultConfig.process_title],
+      ["process_lead", config.process_lead || defaultConfig.process_lead],
+      ["who_title", config.who_title || defaultConfig.who_title],
+      ["who_lead", config.who_lead || defaultConfig.who_lead],
+      ["cta_title", config.cta_title || defaultConfig.cta_title],
+      ["cta_lead", config.cta_lead || defaultConfig.cta_lead],
+      ["cta_button", config.cta_button || defaultConfig.cta_button],
+      ["cta_disclaimer", config.cta_disclaimer || defaultConfig.cta_disclaimer]
+    ]);
+  }
+
+  if (window.elementSdk) {
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange,
+      mapToCapabilities,
+      mapToEditPanelValues
+    });
+  }
+
+  // Mobile menu toggle
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking on a link
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  });
+</script>
+<script type="text/javascript">
+function zforms_open_window(url, height, width) {
+  var leftPos = 0;
+  var topPos = 0;
+  if(screen) {
+    leftPos = (screen.width - width) / 2;
+    topPos = (screen.height - height) / 2;
+    window.open(
+      url,
+      null,
+      'width=' + width + ',height=' + height + ',left=' + leftPos + ',top=' + topPos + 
+      ',toolbar=0,location=0,status=1,scrollbars=1,resizable=1'
+    );
+  }
+}
+</script>
+
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ae1e5a067cb804a',t:'MTc2NTc1OTMwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
